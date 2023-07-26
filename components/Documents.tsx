@@ -15,21 +15,21 @@ export default function Documents() {
   >(null);
   const user = useAuthState(auth)[0];
 
-  const fetchDocuments = async () => {
-    setLoading(true);
-    setError(null);
-    myDocuments((await user?.getIdToken()) ?? "")
-      .then((documents) => {
-        setDocuments(documents);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error.message);
-        setLoading(false);
-      });
-  };
-
   useEffect(() => {
+    const fetchDocuments = async () => {
+      setLoading(true);
+      setError(null);
+      myDocuments((await user?.getIdToken()) ?? "")
+        .then((documents) => {
+          setDocuments(documents);
+          setLoading(false);
+        })
+        .catch((error) => {
+          setError(error.message);
+          setLoading(false);
+        });
+    };
+
     if (user) {
       fetchDocuments();
     }

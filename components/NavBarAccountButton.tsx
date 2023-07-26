@@ -4,6 +4,7 @@ import { firebaseSignIn, firebaseSignOut } from "@/lib/client_auth";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { CreateNote } from "./CreateNote";
+import Image from "next/image";
 
 function useOnClickOutside(
   ref: React.MutableRefObject<any>,
@@ -42,7 +43,9 @@ function AccountButtonWithAuth() {
 
   return session ? (
     <div className="flex flex-row items-center relative" ref={ref}>
-      <img
+      <Image
+        width={32}
+        height={32}
         src={session.user?.image || undefined}
         alt="profile"
         className="w-8 h-8 rounded-full mr-2"
