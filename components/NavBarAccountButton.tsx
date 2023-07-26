@@ -46,7 +46,7 @@ function AccountButtonWithAuth() {
       <Image
         width={32}
         height={32}
-        src={session.user?.image || undefined}
+        src={session.user?.image || ""}
         alt="profile"
         className="w-8 h-8 rounded-full mr-2"
         onClick={() => setDropdownOpen(!dropdownOpen)}
