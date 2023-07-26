@@ -48,12 +48,12 @@ function AccountButtonWithAuth() {
         height={32}
         src={session.user?.image || ""}
         alt="profile"
-        className="w-8 h-8 rounded-full mr-2"
+        className="w-8 h-8 rounded-full mr-2 cursor-pointer"
         onClick={() => setDropdownOpen(!dropdownOpen)}
       />
       <span
         onClick={() => setDropdownOpen(!dropdownOpen)}
-        className="text-2xl font-bold"
+        className="text-2xl font-bold cursor-pointer"
       >
         {session.user?.name}
       </span>
@@ -78,7 +78,7 @@ function AccountButtonWithAuth() {
       )}
     </div>
   ) : (
-    <span className="text-2xl font-bold" onClick={() => signIn("discord")}>
+    <span className="text-2xl font-bold cursor-pointer" onClick={() => signIn("discord")}>
       Log in
     </span>
   );
