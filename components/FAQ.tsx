@@ -20,12 +20,14 @@ function FAQItem({
 export default function FAQ() {
   return (
     <div className="w-full p-8 flex flex-col gap-2 font-sans text-lg">
+      <span className="text-2xl font-bold">FAQ</span>
       <FAQItem question="What is this?">
         Discord&apos;s Clyde can open links. <b>For Clyde</b> lets you give
         Clyde context that only it can see. Ask Clyde about your private project
         without boring everyone with the details. Make inside jokes and quests
-        more immersive by letting Clyde hold clues. Or get Clyde&apos;s take on
-        your thoughts without oversharing with the whole server.
+        more immersive by letting discord&apos;s Clyde hold clues. Or get
+        Clyde&apos;s take on your thoughts without oversharing with the whole
+        server.
       </FAQItem>
       <FAQItem question="What's Clyde?">
         <a href="dis.gd/clyde" className="text-blue-500">
@@ -33,8 +35,8 @@ export default function FAQ() {
         </a>{" "}
         is <b>Discord&apos;s new AI bot,</b> powered by OpenAI. You can&apos;t
         get access to it yet, you have to get lucky and be invited to the beta.
-        You can use it both in DMs if either you or the other person has access
-        to Clyde, or in servers that have access to Clyde.
+        You can use it both in discord DMs if either you or the other person has
+        access to Clyde, or in servers that have access to Clyde.
       </FAQItem>
       <FAQItem question="How do I create a note?">
         After logging in, click your avatar in the top right corner and click
@@ -56,7 +58,8 @@ export default function FAQ() {
         ways to interact and engage your friends. You can direct the
         conversation without handing all the answers to them upfront. It adds a
         dash of mystery and customization to your Clyde bot. We rely on a simple
-        user agent check combined with reverse DNS lookup, which is not secure.
+        user agent check combined with reverse DNS lookup, checking whether this
+        is a discord IP, which is not secure.
       </FAQItem>
       <FAQItem question="Is there a limit to how many private notes I can create?">
         <b>No.</b> There is no limit on the number of private notes you can
@@ -69,8 +72,8 @@ export default function FAQ() {
       <FAQItem question="How can I provide Clyde with the link to my note?">
         <b>There are a few ways.</b> You can send the link to Clyde directly in
         the chat, or you can leverage the fact that Clyde can read your about me
-        (and pronouns). You include the link to the note in your about me, and
-        then suggest that Clyde read your about me.
+        (and pronouns). You include the link to the note in your discord about
+        me, and then suggest that Clyde read your about me.
       </FAQItem>
       <FAQItem question="What can I use this for?">
         <b>Anything you want.</b> I created this to more easily be able to share
