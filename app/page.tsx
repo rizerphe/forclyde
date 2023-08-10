@@ -4,6 +4,12 @@ import CTA from "../components/CTA";
 import FAQ from "@/components/FAQ";
 import HidingDocuments from "@/components/HidingDocuments";
 
+export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   return (
     <>
