@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: "For Clyde",
   description:
     "Write notes for discord's Clyde bot that only it can read (almost).",
+  openGraph: {
+    type: "website",
+    title: "For Clyde",
+    description:
+      "Write notes for discord's Clyde bot that only it can read (almost).",
+    url: "https://forclyde.vercel.app",
+  },
 };
 
 export default function RootLayout({
