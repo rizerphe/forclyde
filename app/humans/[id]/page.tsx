@@ -11,7 +11,7 @@ export async function generateMetadata({
 }) {
   return {
     alternates: {
-      canonical: `/${id}`,
+      canonical: `https://forclyde.vercel.app/${id}`,
     },
   };
 }

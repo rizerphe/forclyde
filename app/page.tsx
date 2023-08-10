@@ -6,7 +6,7 @@ import HidingDocuments from "@/components/HidingDocuments";
 
 export const metadata = {
   alternates: {
-    canonical: "/",
+    canonical: "https://forclyde.vercel.app/",
   },
 };
 
