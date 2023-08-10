@@ -13,7 +13,7 @@ export default function FoldableDocuments() {
   return user ? (
     <Section stretch={false}>
       <div
-        className="flex flex-row items-center justify-between bg-gray-200 dark:bg-gray-800 w-full p-2 rounded-md cursor-pointer"
+        className="flex flex-row items-center justify-between bg-gray-200 dark:bg-zinc-900 w-full p-2 rounded-md cursor-pointer"
         onClick={() => setShow(!show)}
       >
         My Notes

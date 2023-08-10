@@ -1,11 +1,26 @@
 "use client";
 import { addDocument } from "@/lib/client_db";
+import { SessionProvider } from "next-auth/react";
 import { useSession, signIn } from "next-auth/react";
 import { auth } from "@/lib/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { z } from "zod";
 import { redirect } from "next/navigation";
 import { useState } from "react";
+
+export function CreateNoteWithSession({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <SessionProvider>
+      <CreateNote className={className}>{children}</CreateNote>
+    </SessionProvider>
+  );
+}
 
 export function CreateNote({
   children,

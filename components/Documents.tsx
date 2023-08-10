@@ -37,7 +37,7 @@ export default function Documents() {
 
   return (
     <SessionProvider>
-      <div className="flex flex-col bg-gray-200 dark:bg-gray-800 w-full rounded-md overflow-hidden">
+      <div className="flex flex-col bg-gray-200 dark:bg-zinc-900 w-full rounded-md overflow-hidden">
         {loading ? (
           <div className="flex flex-row justify-center items-center p-2 text-gray-500 dark:text-gray-400">
             Loading...
@@ -47,7 +47,7 @@ export default function Documents() {
             {documents?.map(({ id, document }) => (
               <Link
                 key={id}
-                className="flex flex-row px-2 py-1 hover:bg-gray-300 dark:hover:bg-gray-700"
+                className="flex flex-row px-2 py-1 hover:bg-gray-300 dark:hover:bg-zinc-700"
                 href={`/humans/${id}`}
               >
                 {document.name}
