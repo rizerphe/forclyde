@@ -14,7 +14,7 @@ export function DiscordMessage({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-row w-full gap-4 items-center text-white bg-[#313338] hover:bg-[#2e3035] p-4 font-sans">
+    <div className="flex flex-row w-full gap-4 items-start text-white bg-[#313338] hover:bg-[#2e3035] p-4 font-sans">
       <Image
         className="rounded-full w-12 h-12"
         src={avatar}
