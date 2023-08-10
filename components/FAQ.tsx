@@ -30,7 +30,7 @@ export default function FAQ() {
         server.
       </FAQItem>
       <FAQItem question="What's Clyde?">
-        <a href="dis.gd/clyde" className="text-blue-500">
+        <a href="https://dis.gd/clyde" className="text-blue-500">
           Clyde
         </a>{" "}
         is <b>Discord&apos;s new AI bot,</b> powered by OpenAI. You can&apos;t
